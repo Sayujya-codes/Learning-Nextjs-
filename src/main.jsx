@@ -9,9 +9,9 @@ import Jsxloop from "./component/Section 3/Jsxloop.jsx";
 import ConditionalRend from "./component/Section 3/ConditionalRend.jsx";
 import SwitchPractise from "./component/Section 3/SwitchPractise.jsx";
 import ParentPractise from "./component/Section 4/ParentPractise.jsx";
-import ObjParent from "./component/ObjParent.jsx";
-import MouseClick from "./component/MouseClick.jsx";
-import FormSubmit from "./component/FormSubmit";
+import ObjParent from "./component/Section 4/ObjParent.jsx";
+import MouseClick from "./component/Section 4/MouseClick.jsx";
+import FormSubmit from "./component/Section 4/FormSubmit.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
