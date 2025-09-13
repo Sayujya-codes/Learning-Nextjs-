@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import "./assets/css/style.css";
 // import './index.css'
 import App from "./App.jsx";
 import Demo from "./Demo.jsx";
@@ -12,6 +13,8 @@ import ParentPractise from "./component/Section 4/ParentPractise.jsx";
 import ObjParent from "./component/Section 4/ObjParent.jsx";
 import MouseClick from "./component/Section 4/MouseClick.jsx";
 import FormSubmit from "./component/Section 4/FormSubmit.jsx";
+import MenuFile from "./component/MenuFile.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -31,6 +34,10 @@ createRoot(document.getElementById("root")).render(
     {/* <ObjParent/> */}
     {/* <MouseClick /> */}
 
-    <FormSubmit />
+    {/* <FormSubmit /> */}
+    <App />
+    {/* <BrowserRouter>
+      <MenuFile />
+    </BrowserRouter> */}
   </StrictMode>
 );
