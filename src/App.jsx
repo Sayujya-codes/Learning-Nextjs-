@@ -32,26 +32,38 @@
 
 // export default App;
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import ContactPage from "./pages/ContactPage";
-import AboutPage from "./pages/AboutPage";
-import NotFound from "./pages/NotFound";
+// ------------------------------------------------ for routing
+
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import HomePage from "./pages/HomePage";
+// import ContactPage from "./pages/ContactPage";
+// import AboutPage from "./pages/AboutPage";
+// import NotFound from "./pages/NotFound";
+
+// const App = () => {
+//   return (
+//     <div>
+//       <BrowserRouter>
+//         {/* <MenuFile /> */}
+//         <Routes>
+//           <Route path="/" element={<HomePage />}></Route>
+//           <Route path="/about/:id/:name" element={<AboutPage />}></Route>
+//           <Route path="/contact" element={<ContactPage />}></Route>
+//           <Route path="/*" element={<NotFound />}></Route>
+//         </Routes>
+//       </BrowserRouter>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+// ------------------------------------------ for Hooks
+
+import React from "react";
 
 const App = () => {
-  return (
-    <div>
-      <BrowserRouter>
-        {/* <MenuFile /> */}
-        <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/about/:id/:name" element={<AboutPage />}></Route>
-          <Route path="/contact" element={<ContactPage />}></Route>
-          <Route path="/*" element={<NotFound />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default App;
