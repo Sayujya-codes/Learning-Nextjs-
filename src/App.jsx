@@ -60,10 +60,28 @@
 
 // ------------------------------------------ for Hooks
 
-import React from "react";
+import React, { useRef } from "react";
 
 const App = () => {
-  return <div></div>;
+  let userefTest = useRef();
+  let userefTest2 = useRef();
+  let userefTest3 = useRef();
+
+  const btnClick = () => {
+    userefTest.innerText = "Hello from the other side!";
+    userefTest2.innerText = "hello from test 2";
+    userefTest3.innerText = "hello from test 3";
+  };
+  return (
+    <div>
+      {/* <h1 ref={userefTest}></h1> */}
+      <h1 ref={(h1) => (userefTest = h1)}></h1>
+      <h1 ref={(h2) => (userefTest2 = h2)}></h1>
+      <h1 ref={(h3) => (userefTest3 = h3)}></h1>
+
+      <button onClick={btnClick}>Click Me!</button>
+    </div>
+  );
 };
 
 export default App;
