@@ -3,7 +3,6 @@ import MenuFile from "../component/MenuFile";
 import { useParams } from "react-router-dom";
 const AboutPage = () => {
   let { id, name } = useParams();
-
   return (
     <div>
       <MenuFile />

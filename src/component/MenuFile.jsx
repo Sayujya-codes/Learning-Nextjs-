@@ -32,7 +32,7 @@ const MenuFile = () => {
             className={({ isActive }) =>
               isActive ? "active-item" : "pending-item"
             }
-            to="/about"
+            to="/about/10/Sayujya"
           >
             About Us
           </NavLink>
