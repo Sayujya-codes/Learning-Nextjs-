@@ -83,6 +83,7 @@ const App = () => {
       <h1 ref={(h1) => (userefTest = h1)}></h1>
       <h1 ref={(h2) => (userefTest2 = h2)}></h1>
       <h1 ref={(h3) => (userefTest3 = h3)}></h1>
+      <h1 ref={(h3) => (userefTest3 = h3)}></h1>
 
       <img ref={myimg} src="https://placehold.co/600x400" />
 
