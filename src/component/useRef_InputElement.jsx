@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 
-const useRef_InputElement = () => {
-  const change = () => {};
+const UseRef_InputElement = () => {
+  let firstName = useRef();
+  let lastName = useRef();
+
+  const change = () => {
+    let fName = firstName.current.value;
+    let lName = lastName.current.value;
+
+    alert(fName + " " + lName);
+  };
+
   return (
     <div>
-      <input type="text" placeholder="First Name" />
-      <input type="text" placeholder="Last Name" />
-      <button onClick={change}></button>
+      <input ref={firstName} type="text" placeholder="First Name" />
+      <br /> <br />
+      <input ref={lastName} type="text" placeholder="Last Name" />
+      <br /> <br />
+      <button onClick={change}>Click Me</button>
     </div>
   );
 };
 
-export default useRef_InputElement;
+export default UseRef_InputElement;

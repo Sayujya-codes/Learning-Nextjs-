@@ -15,6 +15,7 @@ import MouseClick from "./component/Section 4/MouseClick.jsx";
 import FormSubmit from "./component/Section 4/FormSubmit.jsx";
 import MenuFile from "./component/MenuFile.jsx";
 import { BrowserRouter } from "react-router-dom";
+import UseRef_InputElement from "./component/useRef_InputElement";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -35,9 +36,10 @@ createRoot(document.getElementById("root")).render(
     {/* <MouseClick /> */}
 
     {/* <FormSubmit /> */}
-    <App />
+    {/* <App /> */}
     {/* <BrowserRouter>
       <MenuFile />
     </BrowserRouter> */}
+    <UseRef_InputElement />
   </StrictMode>
 );
