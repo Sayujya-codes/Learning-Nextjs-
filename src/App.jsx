@@ -72,14 +72,13 @@ const App = () => {
     userefTest.innerText = "Hello from the other side!";
     userefTest2.innerText = "hello from test 2";
     userefTest3.innerText = "hello from test 3";
-
     myimg.current.src = "https://placehold.co/600x400?text=Hello+World";
     myimg.current.setAttribute("height", "200px");
     myimg.current.setAttribute("width", "200px");
   };
   return (
     <div>
-      {/* <h1 ref={userefTest}></h1> */}
+      <h1 ref={userefTest}></h1>
       <h1 ref={(h1) => (userefTest = h1)}></h1>
       <h1 ref={(h2) => (userefTest2 = h2)}></h1>
       <h1 ref={(h3) => (userefTest3 = h3)}></h1>
