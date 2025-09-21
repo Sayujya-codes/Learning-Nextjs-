@@ -1,21 +1,25 @@
 import React, { useRef } from "react";
 
 const UseRef_InputElement = () => {
-  let firstName = useRef();
-  let lastName = useRef();
+  let firstName,
+    lastName = useRef();
 
   const change = () => {
-    let fName = firstName.current.value;
-    let lName = lastName.current.value;
+    let fName = firstName.value;
+    let lName = lastName.value;
 
     alert(fName + " " + lName);
   };
 
   return (
     <div>
-      <input ref={firstName} type="text" placeholder="First Name" />
+      <input
+        ref={(a) => (firstName = a)}
+        type="text"
+        placeholder="First Name"
+      />
       <br /> <br />
-      <input ref={lastName} type="text" placeholder="Last Name" />
+      <input ref={(a) => (lastName = a)} type="text" placeholder="Last Name" />
       <br /> <br />
       <button onClick={change}>Click Me</button>
     </div>
