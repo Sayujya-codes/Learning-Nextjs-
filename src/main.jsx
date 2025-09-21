@@ -1,6 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./assets/css/style.css";
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
 // import './index.css'
 import App from "./App.jsx";
 import Demo from "./Demo.jsx";
@@ -16,6 +18,7 @@ import FormSubmit from "./component/Section 4/FormSubmit.jsx";
 import MenuFile from "./component/MenuFile.jsx";
 import { BrowserRouter } from "react-router-dom";
 import UseRef_InputElement from "./component/useRef_InputElement";
+import UseRef_css from "./component/useRef_css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -40,6 +43,8 @@ createRoot(document.getElementById("root")).render(
     {/* <BrowserRouter>
       <MenuFile />
     </BrowserRouter> */}
-    <UseRef_InputElement />
+    {/* <UseRef_InputElement /> */}
+
+    <UseRef_css />
   </StrictMode>
 );

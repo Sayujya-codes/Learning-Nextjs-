@@ -1,14 +1,22 @@
 import React, { useRef } from "react";
 
-const useRef_css = () => {
+const UseRef_css = () => {
   let firstName = useRef();
-  const change = () => {};
+  let myHeadline = useRef();
+  const change = () => {
+    // myHeadline.current.classList.remove("text-success");
+    myHeadline.current.classList.add("text-danger");
+  };
   return (
     <div>
-      <input ref={firstName} type="text" placeholder="First Name" />
+      <h1 ref={myHeadline} className="text-success">
+        Test
+      </h1>
+      <input ref={firstName} type="text" placeholder="First Name" /> <br />
+      <br />
       <button onClick={change}>Click me</button>
     </div>
   );
 };
 
-export default useRef_css;
+export default UseRef_css;
