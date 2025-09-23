@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 
-const useRefCachingExpensiveComputation = () => {
-  const change1 = () => {
-    alert("test 1");
+const UseRefCachingExpensiveComputation = () => {
+  let APIData = useRef(null);
+  let myPTag = useRef();
+  const fetchData = async () => {
+    let response = await fetch("https://dummyjson.com/products");
+    APIData.current = await response.json();
   };
-  const change2 = () => {
-    alert("test 2");
+  const showData = () => {
+    myPTag.current.innerText = JSON.stringify(APIData.current);
   };
   return (
     <div>
-      <button onClick={change1}>Click me 1</button>
-      <button onClick={change2}>Click me 2</button>
+      <p ref={myPTag}></p>
+      <button onClick={fetchData}>Call Api</button>
+      <br />
+      <br />
+      <button onClick={showData}>Show Data</button>
     </div>
   );
 };
 
-export default useRefCachingExpensiveComputation;
+export default UseRefCachingExpensiveComputation;

@@ -19,6 +19,7 @@ import MenuFile from "./component/MenuFile.jsx";
 import { BrowserRouter } from "react-router-dom";
 import UseRef_InputElement from "./component/useRef_InputElement";
 import UseRef_css from "./component/useRef_css";
+import UseRefCachingExpensiveComputation from "./component/useRefCachingExpensiveComputation";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -45,6 +46,7 @@ createRoot(document.getElementById("root")).render(
     </BrowserRouter> */}
     {/* <UseRef_InputElement /> */}
 
-    <UseRef_css />
+    {/* <UseRef_css /> */}
+    <UseRefCachingExpensiveComputation />
   </StrictMode>
 );
