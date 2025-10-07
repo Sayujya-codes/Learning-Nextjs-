@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 // import './index.css'
 import App from "./App.jsx";
 import UseStateImmutableObjects from "./component/UseStateImmutableObjects.jsx";
+import SpreadOperator from "./component/SpreadOperator.jsx";
 // import StateasLecture from "./component/StateasLecture.jsx";
 // import Demo from "./Demo.jsx";
 // import Jsxifelse from "./component/Section 3/Jsxternory.jsx";
@@ -55,6 +56,7 @@ createRoot(document.getElementById("root")).render(
 
     {/* <StateasLecture /> */}
 
-    <UseStateImmutableObjects />
+    {/* <UseStateImmutableObjects /> */}
+    <SpreadOperator />
   </StrictMode>
 );
