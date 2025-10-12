@@ -1,43 +1,40 @@
 import React, { useState } from "react";
 
-const UseState_ImmutableArray = () => {
-  // we need 2 useState here:
-  // 1. for the list of the task that will be displayed
-  // 2. for the data that we will be adding in the input field
-
+const Todo = () => {
   const [list, setList] = useState([]);
   const [item, setItem] = useState("");
 
-  const AddToList = () => {
+  const toAdd = () => {
+    console.log("function called");
     list.push(item);
     setList([...list]);
   };
   return (
     <div>
       <p>{list.length}</p>
+
       <input
         type="text"
-        placeholder="Add Task"
+        placeholder="Task Here"
         onChange={(e) => setItem(e.target.value)}
       />
       <br />
       <br />
-      <button onClick={AddToList}>Add</button>
-      <br />
+      <button onClick={toAdd}>Add Task</button>
+      {/* <p>{item}</p> */}
       <table>
         <tbody>
           {list.length !== 0 ? (
             list.map((i, index) => {
               return (
-                <tr>
-                  <td>{index}</td>
+                <tr key={index}>
                   <td>{i}</td>
-                  <button>Remove</button>
+                  <td>{index}</td>
                 </tr>
               );
             })
           ) : (
-            <tr></tr>
+            <td>No Task!</td>
           )}
         </tbody>
       </table>
@@ -45,4 +42,4 @@ const UseState_ImmutableArray = () => {
   );
 };
 
-export default UseState_ImmutableArray;
+export default Todo;
