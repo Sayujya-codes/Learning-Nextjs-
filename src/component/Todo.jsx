@@ -9,6 +9,12 @@ const Todo = () => {
     list.push(item);
     setList([...list]);
   };
+
+  const removeItem = (index) => {
+    alert(index);
+    list.splice(index, 1);
+    setList([...list]);
+  };
   return (
     <div>
       <p>{list.length}</p>
@@ -29,7 +35,14 @@ const Todo = () => {
               return (
                 <tr key={index}>
                   <td>{i}</td>
-                  <td>{index}</td>
+                  {/* <td>{index}</td> */}
+                  <button
+                    onClick={() => {
+                      removeItem(index);
+                    }}
+                  >
+                    Remove
+                  </button>
                 </tr>
               );
             })

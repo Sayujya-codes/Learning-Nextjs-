@@ -10,6 +10,7 @@ import SpreadOperator from "./component/Section 6/SpreadOperator.jsx";
 import LearnSpreadandRest from "./component/Section 6/LearnSpreadandRest.jsx";
 import UseState_ImmutableArray from "./component/UseState_ImmutableArray.jsx";
 import Todo from "./component/Todo.jsx";
+import Pass_Call_function from "./component/Pass_Call_function.jsx";
 // import StateasLecture from "./component/StateasLecture.jsx";
 // import Demo from "./Demo.jsx";
 // import Jsxifelse from "./component/Section 3/Jsxternory.jsx";
@@ -64,5 +65,6 @@ createRoot(document.getElementById("root")).render(
     {/* <LearnSpreadandRest /> */}
     {/* <UseState_ImmutableArray /> */}
     <Todo />
+    {/* <Pass_Call_function /> */}
   </StrictMode>
 );
