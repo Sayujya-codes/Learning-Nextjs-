@@ -1,0 +1,105 @@
+Questions for the Self Practise Questions:
+
+---
+
+Part 1:
+
+🪝 [Hook] Meet With Hook
+🟡 Intermediate
+
+Done - Create a component that tracks the number of times a button is clicked and displays a message after every 5 clicks.
+
+Done - Build a simple counter that resets to 0 automatically after it reaches 10.
+
+---
+
+Part 2:
+
+🪝 [Hook] useRef InnerText / InnerHTML
+🟡 Intermediate
+
+Use useRef to change the text content of a <p> tag when a button is clicked.
+
+Use useRef to get the current innerHTML of an element and display it in another <div>.
+
+---
+
+Part 3:
+
+🪝 [Hook] useRef Working With Attribute
+🟡 Intermediate
+
+Use useRef to toggle an image’s src attribute on button click.
+
+Use useRef to update a button’s disabled attribute after 3 clicks.
+
+---
+
+Part 4:
+
+🪝 [Hook] useRef Working With Input Element
+🟡 Intermediate
+
+Focus an input box when a button is clicked using useRef.
+
+Log the input’s value without using onChange (only via ref access).
+
+---
+
+Part 5:
+🪝 [Hook] useRef Working With CSS Class
+🟡 Intermediate
+
+Use useRef to toggle a “highlight” CSS class on a div when a button is clicked.
+
+Change the background color of a box every 2 seconds using useRef and setInterval.
+
+---
+
+Part 6:
+🪝 [Hook] useRef Caching Expensive Computation
+🟡 Intermediate
+
+Store a computed value (e.g., the factorial of a number) in a ref so it doesn’t recompute on re-render.
+
+Use a ref to store the previous value of a state variable and display both current and previous values.
+
+---
+
+Part 7:
+🪝 [Hook] useState Understanding Inside
+🟡 Intermediate
+
+Demonstrate the difference between updating state directly (count++) vs using a function form (setCount(prev => prev + 1)).
+
+Create a toggle button that changes between ON and OFF and logs the render count.
+
+---
+
+Part 8:
+🪝 [Hook] useState Working With Immutable Object
+🟡 Intermediate
+
+Create a user object with name, age, and email. Update only one field without losing others.
+
+Build a toggle for switching isActive true/false inside a user object.
+
+---
+
+Part 9:
+🪝 [Hook] useState Working With Immutable Array Part 1 & 2
+🟡 Intermediate
+
+Add new items to a list immutably.
+
+Remove an item from a list by index or id using filter().
+
+---
+
+Part 10:
+🪝 [Hook] useState Managing Form Like Pro (Part 1 & 2)
+🟡 Intermediate
+
+Manage multiple form inputs using one useState object.
+
+Display live preview of form data below the form.

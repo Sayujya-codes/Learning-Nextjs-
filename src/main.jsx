@@ -3,14 +3,18 @@ import { createRoot } from "react-dom/client";
 import "./assets/css/style.css";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
+import "milligram/dist/milligram.css";
 // import './index.css'
 import App from "./App.jsx";
 import UseStateImmutableObjects from "./component/Section 6/UseStateImmutableObjects.jsx";
 import SpreadOperator from "./component/Section 6/SpreadOperator.jsx";
 import LearnSpreadandRest from "./component/Section 6/LearnSpreadandRest.jsx";
-import UseState_ImmutableArray from "./component/UseState_ImmutableArray.jsx";
-import Todo from "./component/Todo.jsx";
-import Pass_Call_function from "./component/Pass_Call_function.jsx";
+import UseState_ImmutableArray from "./component/Section 6/UseState_ImmutableArray.jsx";
+import Todo from "./component/Section 6/Todo.jsx";
+import Pass_Call_function from "./component/Section 6/Pass_Call_function.jsx";
+import ManagingForm from "./component/Section 6/ManagingForm.jsx";
+import SelfP1Q1 from "./component/SelfP1Q1.jsx";
+import SelfP1Q2 from "./component/SelfP1Q2.jsx";
 // import StateasLecture from "./component/StateasLecture.jsx";
 // import Demo from "./Demo.jsx";
 // import Jsxifelse from "./component/Section 3/Jsxternory.jsx";
@@ -64,7 +68,12 @@ createRoot(document.getElementById("root")).render(
     {/* <SpreadOperator /> */}
     {/* <LearnSpreadandRest /> */}
     {/* <UseState_ImmutableArray /> */}
-    <Todo />
+    {/* <Todo /> */}
     {/* <Pass_Call_function /> */}
+    {/* <ManagingForm /> */}
+
+    {/* ----------------------------------------------------- */}
+    {/* <SelfP1Q1 /> */}
+    <SelfP1Q2 />
   </StrictMode>
 );
