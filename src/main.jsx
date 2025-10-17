@@ -70,10 +70,10 @@ createRoot(document.getElementById("root")).render(
     {/* <UseState_ImmutableArray /> */}
     {/* <Todo /> */}
     {/* <Pass_Call_function /> */}
-    {/* <ManagingForm /> */}
+    <ManagingForm />
 
     {/* ----------------------------------------------------- */}
     {/* <SelfP1Q1 /> */}
-    <SelfP1Q2 />
+    {/* <SelfP1Q2 /> */}
   </StrictMode>
 );
